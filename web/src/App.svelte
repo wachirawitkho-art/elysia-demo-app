@@ -2,6 +2,18 @@
   import viteLogo from "/vite.svg";
   import svelteLogo from "./assets/svelte.svg";
   import Counter from "./lib/Counter.svelte";
+    import { onMount } from "svelte";
+
+   onMount(async () => {
+    try {
+      const res = await fetch("http://localhost:3000/ping");
+      const data = await res.json();
+
+      console.log("SERVER RESPONSE:", data);
+    } catch (err) {
+      console.error("FETCH ERROR:", err);
+    }
+  });
 </script>
 
 <main>

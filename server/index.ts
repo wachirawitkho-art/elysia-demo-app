@@ -60,6 +60,12 @@ const app = new Elysia()
       tags: ["Auth"],
     },
   })
+  .get("/ping", () => {
+    return {
+      message: "pong",
+      time: Date.now(),
+    };
+  })
   .listen(port);
 
 logger.info(

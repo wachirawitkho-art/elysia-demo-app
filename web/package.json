@@ -12,8 +12,11 @@
     "svelte-check": "bunx svelte-check"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@trivago/prettier-plugin-sort-imports": "5.0.1",
     "prettier": "3.2.5",
-    "prettier-plugin-svelte": "3.2.3"
+    "prettier-plugin-svelte": "3.2.3",
+    "svelte": "^5.55.7",
+    "vite": "^8.0.13"
   }
 }
